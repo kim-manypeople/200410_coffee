@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>집에서도 완벽한 한잔, 드립커피 레시피</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,900&display=swap" rel="stylesheet">
+	<style type="text/css">
+		html{font-family: 'Noto Sans KR', sans-serif;}
+		body, h1, h2, h3, p, footer {margin: 0}
+		nav{height: 44px; text-align: center ;margin: auto;position: sticky; top: 0; margin-bottom: 50px}
+
+		nav ul{margin-top: 40px; margin-bottom: 40px; width: 860px; background: white; height: 44px ; margin: auto;}
+ 		nav ul li{ list-style-type: none; width: 16%; float: left; text-align: center;line-height: 44px}
+ 		section nav ul li a {; width:860px; height: 44px; text-decoration: none;}
+ 		a {background-color: brown}
+		img{display: block;width: 100%}
+		section{width: 860px; margin: auto; margin-bottom: 100px}
+		h1{text-align: left; padding-top: 200px;margin-bottom: 100px; ; padding-bottom: 300px
+		;font-size: 3em ;}
+		header{margin-bottom: 100px }
+		section{margin-bottom: 200px}
+		audio{margin-bottom: 10px}
+		h2{margin-top: 40px; margin-bottom: 10px; font-size: 3em font-family 400; word-spacing: -1px; letter-spacing: -1px}
+		h3{margin-bottom: 10px}
+		section p{; line-height: 300% font-family 300 ; word-spacing: -1px;}
+		.bold{font-weight: bold;}
+		.big{font-size: 1.5em; word-spacing: -1px}
+		.bgimg-1 {
+    				background-image: url('img20.png');
+    				background-size: 100% auto;
+ 				 	min-height: 100%;
+    				background-position: 0px-100px
+   					background-position: center;
+   					background-size: cover;
+    				background-attachment: fixed;}
+    	.bgimg-2 {
+    				background-image: url('img20-1.png');
+    				background-size: 100% auto;
+ 				 	min-height: 100%;
+    				background-position: 0px-100px
+   					background-position: center;
+   					background-size: cover;
+    				background-attachment: fixed;}
+    				
+    							
+    	.imgboxdiv {width: 265px; height: 280px; position: relative;cursor: pointer;overflow: hidden;
+    		box-shadow: 1px 1px 4px 0px #000;}
+    	.imgdiv{width: 100% ;height: 100%; position: absolute; background-color: white; z-index: 1; -webkit-transition:all .1s ease; transition: all 1s ease; bottom: 0px ;overflow: hidden;}
+    	.imgboxdiv:hover .imgdiv{bottom: 60px}
+    	.imgdescdiv{width: 100% ; height: 50px; padding: 10px; color: #ffffff; background: #f2cb61; position: absolute;bottom: 0px}
+		.row{width: 800px; height: auto; margin: auto; word-break: keep-all; margin-bottom: 90px; display: flex; padding: 0px 5px;}
+		.text-align-center{text-align: center; font-size: 1.6rem; font-weight: 500; margin-top: 15px;}
+		.coffee{display: inline-flex; margin-left: 40px}
+ 		
+		
+
+		footer{height: 200px ;padding-top:200px; padding-bottom: 300px}
+		footer p{text-align: center; margin-top: 120px}
+		a{background: white; text-decoration: none; color: gray}
+		section a{display: inline; width: 180px; height: 30px; text-align: center; line-height: 30px; text-decoration: none; color: gray; border-radius: 10px 0px 10px 0px;border:1px solid gray;padding-left: 10px; padding-right: 10px}
+		section a:hover{background: #795041; box-shadow: 0px 0px 0px none; color: white; transition: all 1s; }
+		*{margin:0;padding:0;}
+ 		 ul,li{list-style:none;}
+ 		 #slide{height:400px ; width: 400px;position:relative;overflow:hidden;margin: auto;}
+ 		 #slide ul{width:400%;height:100%;transition:1s;}
+  		#slide ul:after{content:"";display:block;clear:both;}
+  		#slide li{float:left;width:25%;height:100%;}
+  		#slide li:nth-child(1){background:#faa;}
+ 		#slide li:nth-child(2){background:#ffa;}
+  		#slide li:nth-child(3){background:#faF;}
+  		#slide li:nth-child(4){background:#aaf;}
+  		#slide input{display:none;}
+  		#slide label{display:inline-block;vertical-align:middle;width:10px;height:10px;border:2px solid #666;background:#fff;transition:0.3s;border-radius:50%;cursor:pointer;}
+  		#slide .pos{text-align:center;position:absolute;bottom:10px;left:0;width:100%;text-align:center;}
+  		#pos1:checked~ul{margin-left:0%;}
+ 	 	#pos2:checked~ul{margin-left:-100%;}
+  		#pos3:checked~ul{margin-left:-200%;}
+  		#pos4:checked~ul{margin-left:-300%;}
+  		#pos5:checked~ul{margin-left:0%;}
+  		#pos6:checked~ul{margin-left:-100%;}
+  		#pos7:checked~ul{margin-left:-200%;}
+  		#pos8:checked~ul{margin-left:-300%;}
+
+  		#pos1:checked~.pos>label:nth-child(1){background:#666;}
+  		#pos2:checked~.pos>label:nth-child(2){background:#666;}
+  		#pos3:checked~.pos>label:nth-child(3){background:#666;}
+ 	 	#pos4:checked~.pos>label:nth-child(4){background:#666;}
+  		#pos5:checked~.pos>label:nth-child(1){background:#666;}
+  		#pos6:checked~.pos>label:nth-child(2){background:#666;}
+  		#pos7:checked~.pos>label:nth-child(3){background:#666;}
+  		#pos8:checked~.pos>label:nth-child(4){background:#666;}
+ 	video { max-width: 100%; display: block; margin: 0px auto; }
+ 		[data-tooltip-text]:hover {
+	position: relative;}
+
+	[data-tooltip-text]:after {
+	-webkit-transition: bottom .3s ease-in-out, opacity .3s ease-in-out;
+	-moz-transition: bottom .3s ease-in-out, opacity .3s ease-in-out;
+	transition: bottom .3s ease-in-out, opacity .3s ease-in-out;
+
+	background-color: rgba(0, 0, 0, 0.8);
+
+  	-webkit-box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
+	-moz-box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
+	box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
+	
+  	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+  	color: #FFFFFF;
+	font-size: 12px;
+	margin-bottom: 10px;
+	padding: 7px 12px;
+	position: absolute;
+	width: auto;
+	min-width: 50px;
+	max-width: 300px;
+	word-wrap: break-word;
+
+	z-index: 9999;
+
+	opacity: 0;
+	left: -9999px;
+  	top: 90%;
+	
+	content: attr(data-tooltip-text);}
+
+	[data-tooltip-text]:hover:after {
+	top: 130%;
+	left: 0;
+	opacity: 1;}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="bgimg-1">
+		<h1>
+		<div class="row">집에서도 완벽한 한잔,<br>드립커피 레시피</h1></div>
+		</div>
+	</header>
+		<br>
+		<nav>
+		<ul>
+			<li>
+				<a href="#a" target=""> 드립커피란?</a></li>
+			<li>
+				<a href="#b" target="">특징</a></li>
+			<li>
+				<a href="#c" target="">알아보기</a></li>
+			<li>
+				<a href="#d" target="">준비물</a></li>
+			<li>
+				<a href="#e" target="">커피 내리기</a></li>
+			<li>
+				<a href="#f" target="">더 알아보기</a></li>
+		</ul>
+		</nav>
+	<section>
+		<audio controls>
+		<source src="01.mp3" type="audio/mpeg">
+		</audio>	
+		<img src="img00-1.png">
+		<p>하루에 한 잔씩 꼭 커피를 먹어야 사는 <strike>김모씨…,</strike> 하지만 지금은 코로나 비상사태!<br>
+			카페에 갈 수도 없고 그렇다고 인스턴트 커피로 완벽하지 않은 커피를 마실수는 없다!<br>
+			과연 카페에 가지 않고도 내 취향에 맞는 완벽한 커피 한잔을 마실 수 있을까?<br>
+			<div class="big">집에서도 완벽하게 마실 수 있는 드립 커피 레시피를 만들어 보자!</div> </p>	
+	</section>
+	
+	<section id="a">
+		<h2>드립커피? 그거 뭔가 폼나는데 어려울거 같아…</h2>
+		<div>
+			<div style="width: 400px; height: 500px; float: left; margin-right: 10px">
+			<p class="big"><u>드립 커피(Drip Coffee)란</u></p>
+			<p> 볶아서 간 커피 콩을 거름 장치에 담고,<br> 그 위에 물을 부어 만드는 커피이다.<br>
+			드립 브류(Drip brew)라 함은 <br>이와 같이 커피를 만드는 방법을 일컫는다.<br>
+			거름 장치를 필터라고도 일컬으므로, 드립 커피를 다른 말로 필터 커피(Filter coffee)라고 한다.<br>
+			</p>
+		</div>
+			<div>
+			<div style="width: 400px; height: 400px; float: left; padding-left: 30px"> 
+			<img src="img1-1.png">
+		</div>
+	</section>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		
+	<section id="b">
+		<h2>드립커피가 가지는 특징? 다 똑같은 커피 아니야?</h2>
+		<img src="img3-3.gif">
+		<br>
+		<div class="big" style="width: 300px; height: 200px; float: left; margin-right: 20px "> 
+			기호에 맞게 조절 할 수 있는<br>
+			깔끔하고 경쾌한 커피
+		</div>
+		<div>
+			<div style="width: 520px; height: 200px; float: right; ">
+			<p>드립 커피 제조 방식은 커피 세계에서 가장 흔한 커피 제조 방식, 수동식 기기를 쓰면 커피 제조에 있어서
+		<u>기호에 맞게 조절</u>할 수 있기 때문이다. 종이 필터를 사용하여 만든 드립 커피는 비교적 <u>깔끔하고 경쾌하며 침전물이 적다.</u><br>
+		하지만 커피의 기름 성분(oil)과 에센스가 좀 결여되어 있을 수 있다. 이들이 종이 필터에 남아 있을 수 있기 때문이다. 
+		그래서 핸드드립 커피에는 크레마가 생기지 않는다. 핸드드립은 같은 원두를 사용하더라도 <u>내리는 사람의 손 기술에 따라<br> 맛이 달라지기 때문에 섬세한 조절이 필요하다.</u><br></p>
+		
+	</section>
+
+
+	<section id="c">
+		<h2>드립커피 슬슬 준비해볼까?</h2>
+		<h3>드립커피 용어를 알아보자</h3>
+	
+		<img src="img4-1.png">
+		<br>
+		<br>
+		<div style="width: 300px; height: 200px; float: left; margin-right: 20px "> 
+			   <video muted autoplay loop>
+     			<source src="vid00.mp4" type="video/mp4">
+   		 		</video>
+		</div>
+			<div style="width: 500px; height: 200px; float: left; ">
+		<p>Bloom: 분쇄된 원두에 물을 부으면 커피가 부풀어 오른다.<br>
+		이는 커피 로스팅 과정에서 발생한 이산화탄소가 물을 만나면서 커피 밖으로 나오면서 생기는 현상이다. 로스팅 과정에서 발생한 것이기에 신선한 커피<br>
+		일수록 더 많이 부풀어 오를 수 있다. 또한 라이트 로스팅된 커피일수록 더 잘 부풀어 오른다. 이산화탄소로 부풀어 오르는 과정에서는 <u>물의 흐름이 방해가<br>
+		되기에 좋은 추출이 일어나기 어렵다</u> 때문에 커피를 추출할 때 <u>‘뜸 들이기’로<br>커피 안의 이산화탄소를 먼저 배출시키는 것이 좋다.</u><br></p>
+			</div>
+		</div>
+
+		<img src="img6-1.png">
+		<br>
+		<p>배전도: 커피를 로스팅한 정도에 따라 나뉘게 되는 등급을 일컫는 말.<br>
+		강하게 로스팅 되면 강배전, 중간으로 로스팅되면 중배전, 약하게 로스팅 되면 약배전으로 나눠진다.<br>
+		*다만, 강배전 원두는 드립용으로 사용하기에는 탄맛이 강할 수 있다.<br></p>
+		</div>
+	</section>
+
+	<section id="d">
+		<h3>뭐가 필요하지?</h3>
+		<div style="float: left; width: 260px ;height: 150px; margin-left: 10px ; margin-right: 10px">
+		<img src="img5-3.png">
+		</div>
+
+		<div style="float: left; width: 300px ;height: 520px">
+		<img src="img5-4.png">
+		</div>
+		<div style="float: left; width: 250px ;height: 150px; margin-left: 10px; margin-right: 10px;margin-top: 370px">
+		<img src="img5-2.png">
+		</div>
+		
+		
+		<p><strong>드립포트</strong>: 핸드드립 전용 주전자. 원두에 물이 닿을 때 충격을 덜어주고 물의 흐름을 조절할 수 있도록 도와준다.<br>
+		손에 알맞은 사이즈로 고른다. 몸통에 유연하게 붙어 위로 되어있는 것이 물을 조절하는데 익숙해지기 쉽다.<br>
+		<p><strong>드리퍼</strong>: 커피를 추출할 때 쓰는 원뿔 혹은 사다리꼴 형태의 기구다.<br> 
+		<u>깔끔하고 산미를 강조한 커피</u>를 즐긴다면 물빠짐이 좋은 <u>원뿔형</u>의 드리퍼를,<br> 
+		<u>안정적인 추출로 바디감 있는 커피</u>를 선호한다면 드리퍼 안에 물이 오래 머무는 <u>사다리꼴</u>의 드리퍼를 선택한다.<br>
+		<br>>>드리퍼에 마우스를 올려보세요
+		<br>
+		<div>
+			<div style=" float: left; margin-right: 20px ">
+			<div class="imgboxdiv">
+			<div class="imgdiv"><img src="img7-3.png"></div>
+			<div class="imgdescdiv"> 플라스틱 드리퍼<br> 열전도율이 낮아 예열이 필요 없음</div>
+				
+			</div>
+		</div>
+		<div>
+			<div style=" float: left; margin-right: 20px ">
+			<div class="imgboxdiv">
+			<div class="imgdiv"><img src="img7-4.png"></div>
+			<div class="imgdescdiv"> 금속 드리퍼<br> 열 전도율이 높아 예열이 필요</div>
+				
+			</div>
+		</div>
+		<div>
+			<div style=" float: left; margin-right: 20px ">
+			<div class="imgboxdiv">
+			<div class="imgdiv"><img src="img7-6.jpg"></div>
+			<div class="imgdescdiv"> 유리 드리퍼<br> 보온성이 좋고 위생적</div>
+				
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<br>
+		<br>
+		<p><strong>거름종이</strong>: 거름 종이라고 써놓았지만, 실제로는 아래 사진과 같은 종류의 거름망이 있다.<br>
+		거름종이는 일회용으로 간편하게 사용할 수 있으며 천으로된 거름망은 빨아서 여러번 재사용이 가능하다.<br>
+		또한 부드러운 맛으로 필터링 된다는 장점이 있다.<br></p><br>
+		<img src="img7-1.jpg">
+		<br><p><strong>서버</strong>: 추출된 커피가 모이는 용기이다. 일반적으로 유리로 된 제품을 사용하는데<br> 
+		추출 속도와 양을 눈으로 확인 할 수 있기 때문이다. 계량컵도 서버로 손색이 없다.<br></p>
+		<br>
+	</section>
+	
+	<section>
+		<h3>나에게 완벽한 원두 선택하기</h3>
+		<img src="img10-1.png">
+		<br>
+		<p class="bold">원두의 6대 요소-신맛, 단맛, 쓴맛, 아로마, 플레이버, 바디감</p>
+		<p>커피는 주로 적도에서 북위, 남위 25도 사이의 따뜻한 지역에서 자란다. <br>커피 이름은 대개 국가명을 따서 불리는데 산지역, 생산지, 출하항의 이름이 붙는 경우도 있다.<br>
+		예-국가명: 브라질, 콜롬비아 등, 산지역:킬리만자로, 블루마운틴 등, 생산지: 만델린, 코나 등, 출하항: 모카 등<br>
+		<br>
+		-주요 원두 종류<br>
+<div>
+
+		<div class="coffee" style="width: 100px; height: 100px">
+			
+			<span data-tooltip-text="케냐AA: 상큼한 신맛과 향기로운 과일향"><img src="img22.png"></span>
+		</div>
+
+		<div class="coffee" style="width: 100px; height: 100px">
+			
+			<span data-tooltip-text= "파푸아뉴기니: 초콜릿과 단맛 바디감이 풍부"><img src="img23.png"></span>
+		</div>
+
+		<div class="coffee" style="width: 100px; height: 100px">
+			<span data-tooltip-text= "콜롬비아: 견과류처럼 고소하고 부드러운 맛"><img src="img24.png"></span>
+		</div>
+
+		<div class="coffee" style="width: 100px; height: 100px">
+			<span data-tooltip-text= "아라비카: 단맛,신맛 등 다양한 맛"><img src="img27.png"></span>
+		</div>
+
+		<div class="coffee" style="width: 100px; height: 100px">
+			<span data-tooltip-text= "로부스타: 향미가 다소 투박하지만 거품층이 풍부함"><img src="img26.png"></span>
+		</div>
+</div>
+
+	</section>
+	
+	<section id="e">
+		<h2>드립커피 이제 내려보자!</h2>
+		<img src="img8-7.png">
+		<br>
+		<br>
+		<br>
+		<div>
+			<div style="width: 300px; height: 300px; float: left; margin-right: 20px "> 
+			<img src="img8-0.png">
+		</div>
+		<div>
+			<div style="width: 500px; height: 200px; float: left; ">
+			<p class="big">필터 접기</p>
+			<p>필터를 접는다. 필터의 가장자리 점선을 따라 한 번 접어준다.<br>
+			필터가 드리퍼보다 커서 <u>5mm정도 여유</u>를 갖고 접는 것이 좋다.<br> 
+			드리퍼를 서버나 컵 위에 얹고 접어둔 필터를 드리퍼에 얹는다.<br></p>
+		</div>
+		<img src="img9-3.gif">
+		<br>
+		<br>
+		<br>
+		<div>	
+			<div style="width: 300px; height: 300px; float: right; margin-right: 20px "> 
+			<img src="img8-1.png">
+		</div>
+		<div>
+			<div style="width: 400px; height: 200px; float: left; ">
+			<p class="big">필터 적시기</p>
+			<p><u>뜨거운 물로 필터 전체를 적셔준다.</u><br>
+			이를 린싱이라고 부르는데 필터의 종이 맛을 없애고 드리퍼에 필터를 고정시키며,<br>
+			드리퍼와 컵을 예열한다. 린싱한 물은 버린다.<br></p>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div>	
+			<div style="width: 300px; height: 300px; float: left; margin-right: 20px "> 
+			<img src="img8-2.png">
+		</div>
+		<div>
+			<div style="width: 520px; height: 200px; float: left; ">
+			<p class="big">알맞은 양의 원두가루 담기</p>
+			<p><u>마시고 싶은 커피의 양에 맞춰 간 원두 가루를 필터에 담는다.</u><br>
+			일반적으로 커피 <u>150ml를 낼 떄 10g의 원두가 필요하다.</u><br></p>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div>	
+			<div style="width: 300px; height: 300px; float: right; margin-right: 20px "> 
+			<img src="img8-4.png">
+		</div>
+		<div>
+			<div style="width: 520px; height: 200px; float: left; ">
+			<p class="big">물을 부어 커피 추출하기</p>
+			<p>원두가루에 물을 부은 다음 뜸을 들여 <u>거품이 깨질 때까지 <br>
+				30초에서 1분간 기다려준다.</u><br>
+				뜸들이기가 끝났으면 안에서 바깥으로 달팽이처럼 원을 그려주고,<br>
+				다시 그대로 바깥에서 안으로 돌아온다.<br>
+			물을 조금씩 부어 커피를 추출한다. <u>추출 시간은 2-3분이 적당하다.</u><br>
+			</p>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div>	
+			<div style="width: 300px; height: 300px; float: left; margin-right: 20px "> 
+			<img src="img8-6.png">
+		</div>
+		<div>
+			<div style="width: 520px; height: 200px; float: left; ">
+			<p class="big">잔에 담아 완성하기</p>
+			<p>잘내린 드립커피를 잔에 담아 <u>완성한다.</u><br></p>
+		</div>
+		<img src="img9.png">
+		</section>
+	<section id="f">
+		<h2>드립커피 더 알아보기</h2>
+		<h3>드립커피 관련 서적 추천</h3>
+		<div>
+			<div style="width: 350px; height: 350px; float: left; margin-right: 10px">
+			<img src="img0.jpg">
+		</div>
+		</div>
+		<div>
+			<div style="width: 500px; height: 350px; float: left; ">
+			<img src="img0-1.jpg">
+		</div>
+		</div>
+		abc드립 멜리사와 원두의 드립 커피 배우기-인덱스
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	</section>
+	<section>
+		<h3>서울소재 드립커피 맛집</h3>
+		
+		<div style="width: 400px; height: 400px; float: right; margin-left: 10px">
+		<div id="slide">
+  		<input type="radio" name="pos" id="pos1" checked>
+  		<input type="radio" name="pos" id="pos2">
+  		<input type="radio" name="pos" id="pos3">
+  		<input type="radio" name="pos" id="pos4">
+  		<ul>
+    		<li><img src="img11-4.jpg"></li>
+    		<li><img src="img11-6.jpg">></li>
+    		<li><img src="img11-7.png"></li>
+    		<li><img src="img11-8.png"></li>
+  		</ul>
+  		<p class="pos">
+    	<label for="pos1"></label>
+    	<label for="pos2"></label>
+    	<label for="pos3"></label>
+    	<label for="pos4"></label>
+  		</p>
+</div>
+</div>
+</section>
+<section>
+			<p class="big">성수동 카페 온화</p>
+			<p>“깔끔한 드립커피의 정석”
+				<br>밝고 고급스러운 분위기에서의 커피 한잔
+				<br>산뜻하고 깨끗한 느낌의 드립커피 전문점.
+				<br>수플레 케이크 맛집으로도 유명하다.</p>
+			<a href="https://map.naver.com/v5/entry/place/1321493330?c=14142952.2510354,4515387.2641330,15,0,0,0,dh
+" target="_new">온화 위치 보기</a>
+		
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<section>
+<div style="width: 400px; height: 400px; float: right; margin-left: 10px" class="coffee">
+<div id="slide">
+  <input type="radio" name="pos" id="pos5" checked>
+  <input type="radio" name="pos" id="pos6">
+  <input type="radio" name="pos" id="pos7">
+  <input type="radio" name="pos" id="pos8">
+  <ul>
+    <li><img src="img12-6.jpg"></li>
+    <li><img src="img12-3.jpg">></li>
+    <li><img src="img12-4.jpg"></li>
+    <li><img src="img12-5.jpg"></li>
+  </ul>
+  <p class="pos">
+    <label for="pos5"></label>
+    <label for="pos6"></label>
+    <label for="pos7"></label>
+    <label for="pos8"></label>
+  </p>
+</div>
+</section>
+<section>
+			<p class="big">연남동 펠른</p>
+			<p>“고전적인 멋스러움이 가득한 커피 문화 공간”
+				<br>묵직한 콘크리트 인테리어에서 풍기는 면모에서 알 수 있듯
+				<br>강하고 진한 드립커피 전문점.</p>
+			<a href="https://map.naver.com/v5/entry/place/1729088578?c=14128313.3657902,4517740.0914099,15,0,0,0,dh
+" target="_new">펠른 위치 보기</a>
+		
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<section>
+출처<br>
+<p>https://www.youtube.com/watch?v=QVIszkd7ONo<br>
+https://post.naver.com/viewer/postView.nhn?volumeNo=7557856&memberNo=1085064<br>
+https://www.hyundailivart.co.kr/ko/story/livingtalk/view.lvt?code=LI06&tsbSeq=408<br>
+http://www.fineaudio.co.kr/shop/board/view.php?id=install&no=353<br>
+https://bwissue.com/searchjob/531127<br>
+http://blog.naver.com/PostView.nhn?blogId=gina7268&logNo=221672822088<br>
+http://thetravelnews.co.kr/08/170915/<br>
+https://www.cafeonhwa.com/<br>
+</p>
+	<br>
+	<br>
+	</section>
+	<footer class="bgimg-2"> 
+		<p>2020년 4월 10일 한경대학교 디자인학과 2015286006 김다인©</p>
+	</footer>
+<a style="display: scroll; position: fixed; bottom: 80px; right: 100px;" rel="nofollow" href="#" title="Back to top">
+	<img src="img99.png" style="width: 35px; height: 35px;"> 
+</a>
+</body>
+</html>
